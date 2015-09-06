@@ -1,0 +1,698 @@
+<!-- <div ng-cloak>
+    <div class="row">
+        <div class="col-md-4">
+            <span class="hipster img-responsive img-rounded"></span>
+        </div>
+        <div class="col-md-8">
+            <h1 translate="main.title">Welcome, Java Hipster!</h1>
+            <p class="lead" translate="main.subtitle">This is your homepage</p>
+
+            <div ng-switch="isAuthenticated()">
+                <div class="alert alert-success" ng-switch-when="true"
+                     translate="main.logged.message" translate-values="{username: '{{account.login}}'}">
+                    You are logged in as user "Admin".
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated">
+                    If you want to <a href="#/login">authenticate</a>, you can try the default login="admin" and
+                    password="admin".
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register">
+                    Don't have an account? <a href=\"#/register\">Register</a>
+                </div>
+            </div>
+
+            <p translate="main.question">
+                If you have any question on JHipster:
+            </p>
+
+            <ul>
+                <li><a href="http://jhipster.github.io/" target="_blank" translate="main.link.homepage">JHipster homepage</a></li>
+                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" translate="main.link.stackoverflow">JHipster on Stack Overflow</a></li>
+                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" translate="main.link.bugtracker">JHipster bug tracker</a></li>
+                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" translate="main.link.chat">JHipster public chat room</a></li>
+                <li><a href="https://twitter.com/java_hipster" target="_blank"  translate="main.link.contact">contact @java_hipster on Twitter</a></li>
+            </ul>
+
+            <p>
+             <span translate="main.like">If you like JHipster, don't forget to give us a star on </span>&nbsp;<a href="https://github.com/jhipster/generator-jhipster" target="_blank" translate="main.github">Github</a>!
+            </p>
+        </div>
+    </div>
+</div>
+ -->
+ 
+ 
+ 
+<!--  <md-toolbar layout="row">
+      <div class="md-toolbar-tools">
+        <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button">
+          <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
+        </md-button>
+        <h1>Hello World</h1>
+      </div>
+    </md-toolbar>
+   
+    <div layout="row" flex>
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+          
+        </md-sidenav>
+ 		<div layout="column" tabIndex="-1" role="main" flex>
+         <md-content layout="column" flex class="md-padding">
+            
+            
+            
+            <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </div>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+            
+            
+            
+            
+            
+            
+            </md-content>
+        </div>
+    </div> 
+    
+    
+     -->
+     
+      
+  <!-- <div  ng-cloak ng-switch="isAuthenticated()" >
+    <div ui-sref-active="active" ng-switch-when="false">    
+    
+     <md-button ng-click="close()" class="md-primary">
+          Close Sidenav Right
+        </md-button>
+ </div>
+ </div>   
+ 
+ 
+ 
+ 
+  <div  ng-cloak ng-switch="isAuthenticated()" >
+    <div ui-sref-active="active" ng-switch-when="true">    
+ 
+ <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </div>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    
+    
+  </div>  
+</div>  
+
+</div>
+</div>    -->    
+
+ 
+
+
+<!-- V1  -->
+
+<!-- 
+
+  <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </div>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>  
+     -->
+     
+     
+     
+  <!-- V2  -->  
+
+  <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
+              md-component-id="left"
+              md-is-locked-open="$mdMedia('gt-sm')">
+    <md-toolbar class="md-whiteframe-glow-z1 site-content-toolbar">
+      <div class="md-toolbar-tools docs-toolbar-tools" ng-click="openMenu()" tabIndex="-1"></div>       
+    </md-toolbar>
+    
+    <md-content>
+    
+        <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </div>
+    </md-card>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </div>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>  
+    
+    </md-content>
+   
+</md-sidenav> 
+   
+         
+         
+  <div layout="column" role="main" flex>
+    <md-toolbar class="md-whiteframe-glow-z1 site-content-toolbar">
+
+ 		<div ui-view="navbar1" ></div>
+       
+    </md-toolbar>
+
+    <md-content>
+    
+    
+    
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </div>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+    <br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card><br/>
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+      <md-card-content>
+        <h2 class="md-title">Paracosm</h2>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>  
+    
+    
+    </md-content>
+
+  </div>  
+
+     

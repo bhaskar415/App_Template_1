@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "baseName": "hipoo",
+    "packageName": "com.hipoo",
+    "packageFolder": "com/hipoo",
+    "authenticationType": "oauth2",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "no",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "8e75944bdd942233d394a5794194fcd7016b7e71"
+  }
+}
