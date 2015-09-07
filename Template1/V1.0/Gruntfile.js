@@ -402,7 +402,7 @@ module.exports = function (grunt) {
         'wiredep:test',
         'ngconstant:dev',
         'concurrent:test',
-        'karma'
+//      'karma'
     ]);
 
     grunt.registerTask('build', [
