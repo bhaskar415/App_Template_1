@@ -11,7 +11,7 @@ angular.module('hipooApp')
                     pageTitle: 'register.title'
                 },
                 views: {
-                    'content@': {
+                    'preAuth_content@layout': {
                         templateUrl: 'scripts/app/account/register/register.html',
                         controller: 'RegisterController'
                     }

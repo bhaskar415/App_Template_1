@@ -10,7 +10,7 @@ angular.module('hipooApp')
                     roles: []
                 },
                 views: {
-                    'content@': {
+                    'preAuth_content@layout': {
                         templateUrl: 'scripts/app/account/reset/finish/reset.finish.html',
                         controller: 'ResetFinishController'
                     }

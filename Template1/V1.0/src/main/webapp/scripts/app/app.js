@@ -90,10 +90,14 @@ angular.module('hipooApp', ['LocalStorageModule', 'tmh.dynamicLocale',
         $stateProvider.state('site', {
             'abstract': true,
             views: {
-                'navbar@': {
+               /* 'navbar@': {
                     templateUrl: 'scripts/components/navbar/navbar.html',
                     controller: 'NavbarController'
-                }
+                },*/   
+            /*	 'layout@': {
+	                templateUrl: 'scripts/app/layout/layout.html',
+	                controller: 'LayoutController'
+            	 }*/
             },
             resolve: {
                 authorize: ['Auth',

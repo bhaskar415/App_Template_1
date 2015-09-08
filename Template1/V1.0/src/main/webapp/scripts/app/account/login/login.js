@@ -11,7 +11,7 @@ angular.module('hipooApp')
                     pageTitle: 'login.title'
                 },
                 views: {
-                    'content@': {
+                    'preAuth_content@layout': {
                         templateUrl: 'scripts/app/account/login/login.html',
                         controller: 'LoginController'
                     }

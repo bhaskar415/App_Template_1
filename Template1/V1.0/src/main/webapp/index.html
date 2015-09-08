@@ -23,12 +23,10 @@
     </head>
     <body layout="row" ng-cloak ng-app="hipooApp">
           
-
         <!--[if lt IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
  
-  <!-- I1 Starts -->
  <!--          <div ng-show="{{ENV === 'dev'}}" class="development" ng-cloak=""></div>
         <div ui-view="navbar" ng-cloak=""></div>
         <div class="container-fluid">
@@ -37,13 +35,11 @@
             <div class="footer">
                 <p translate="footer">This is your footer</p>
             </div>
-        </div>   -->
+        </div>  
         
+ -->
         
-        
-                
- <!--I 1.1 starts-->      
-
+ <!--I 1 starts-->
 <!--   <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
               md-component-id="left"
               md-is-locked-open="$mdMedia('gt-sm')">
@@ -65,12 +61,10 @@
     <md-content ui-view="content" md-scroll-y flex layout-padding></md-content>
 
   </div>   -->
-      
-  
-    <!--I 1.1 ends-->
+<!--I 1 ends-->
         
   
-  <!--I 1.2 starts-->  
+<!--I 1.0 starts-->  
 <!-- 
     
         <div ng-cloak ng-switch="!isAuthenticated_root()"  >
@@ -117,11 +111,19 @@
     </div>
    </div>    -->
  
-     <!--I 1.2 ends-->      
-   
-      <div layout="row" ui-view="content" flex></div>
-        
+     <!--I 1.0 ends-->  
  <!-- I1 Ends -->
+     
+ <!--I 1.1 Starts-->  
+     
+    	 <!--        
+         <div layout="row" ui-view="content" flex></div>
+		 -->        
+         
+     	 <div layout="row" ui-view="layout" flex></div>
+<!--I 1.1 Ends-->  
+   
+  
         
         
     
@@ -158,7 +160,7 @@
         <!-- endbuild -->
 
 
-        <!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
+ <!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
         <script src="scripts/app/app.js"></script>
         <script src="scripts/app/app.constants.js"></script>
         <script src="scripts/components/auth/auth.service.js"></script>
@@ -218,17 +220,26 @@
         <script src="scripts/app/main/main.js"></script>
         <script src="scripts/app/main/main.controller.js"></script>
         <script src="scripts/components/auth/provider/auth.oauth2.service.js"></script>
-        <!-- endbuild -->
         
         
-     <!-- Custom scripts -->
+   <!-- Custom scripts -->
          
-    <!-- Angular Material Dependencies -->
-    <script src="bower_components/angular_material/angular-animate.min.js"></script>
-    <script src="bower_components/angular_material/angular-aria.min.js"></script>
-    <script src="bower_components/angular_material/angular-material.min.js"></script>
- 
- 
- 
+	    <!-- Angular Material Dependencies -->
+	    <script src="bower_components/angular_material/angular-animate.min.js"></script>
+	    <script src="bower_components/angular_material/angular-aria.min.js"></script>
+	    <script src="bower_components/angular_material/angular-material.min.js"></script>
+	 
+	    <!-- Layout --> 
+	    <script src="scripts/components/layout/layout.js"></script>
+	    <script src="scripts/components/layout/layout.controller.js"></script>
+	 	
+	 	<!-- Pre Authn UI --> 	 
+        <script src="scripts/app/preAuth/preAuth.controller.js"></script>
+  
+        
+ <!-- endbuild -->
+        
+        
+
 </body>
 </html>

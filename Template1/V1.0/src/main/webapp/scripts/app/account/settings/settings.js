@@ -11,7 +11,7 @@ angular.module('hipooApp')
                     pageTitle: 'global.menu.account.settings'
                 },
                 views: {
-                    'content@': {
+                    'content@layout': {
                         templateUrl: 'scripts/app/account/settings/settings.html',
                         controller: 'SettingsController'
                     }

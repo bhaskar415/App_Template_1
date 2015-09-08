@@ -5,6 +5,6 @@ angular.module('hipooApp')
         $stateProvider
             .state('account', {
                 abstract: true,
-                parent: 'site'
+                parent: 'layout'
             });
     });

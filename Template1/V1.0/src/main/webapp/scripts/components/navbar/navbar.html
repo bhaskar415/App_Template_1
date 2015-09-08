@@ -1,4 +1,5 @@
- <div  ng-cloak ng-switch="!isAuthenticated()" >
+<!-- I1.1  -->
+<!--  <div  ng-cloak ng-switch="!isAuthenticated()" >
     <div layout="row" ui-sref-active="active" ng-switch-when="true">
  
  
@@ -107,14 +108,34 @@
     </div>
 </nav>
  </div>
- </div>
+</div>
+  -->
  
  
  
+ <div  ng-cloak ng-switch="!isAuthenticated()" >
+    <div layout="row" ui-sref-active="active" ng-switch-when="true">
+  
+      <div class="md-toolbar-tools" layout="row" >
+       
+	     <div  layout-align="start center" flex>
+	         <h2>
+	          <span>
+	            <a class="navbar-brand" href="#/"><span translate="global.title">jhipster</span></a>
+			  </span>
+	         </h2>
+   	 	</div>
+   	 	 
+        <div>
+        	 <md-button  class="md-raised"  ui-sref="login"><span class=""> Log In </span></md-button>   			 
+        	 <md-button  class="md-raised"  ui-sref="register"><span class=""> Sign up </span></md-button>   			 
+   	 	</div>   	 	
+      
+ 	</div>
+ </div>   
  
  
- 
- 
+ <!-- I1.1 -->
  
  
  
