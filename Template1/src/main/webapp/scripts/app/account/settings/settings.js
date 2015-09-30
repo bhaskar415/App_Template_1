@@ -14,11 +14,16 @@ angular.module('hipooApp')
                     'content@layout': {
                         templateUrl: 'scripts/app/account/settings/settings.html',
                         controller: 'SettingsController'
+                    },
+                    'passwordPage@settings': {
+                        templateUrl: 'scripts/app/account/password/password.html',
+                        controller: 'PasswordController'
                     }
                 },
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('settings');
+                        $translatePartialLoader.addPart('password');
                         return $translate.refresh();
                     }]
                 }

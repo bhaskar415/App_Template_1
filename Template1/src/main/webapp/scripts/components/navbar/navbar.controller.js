@@ -9,13 +9,11 @@ angular.module('hipooApp')
             Auth.logout();
             $state.go('home');
         };
-        
-        
+                
         $scope.toggleSidenav = function(menuId) {
             $mdSidenav(menuId).toggle();
           };
-         
-          
+                   
           var originatorEv;
           $scope.openMenu = function($mdOpenMenu, ev) {
             originatorEv = ev;
